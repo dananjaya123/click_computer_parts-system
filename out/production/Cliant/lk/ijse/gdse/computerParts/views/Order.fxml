@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1343.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.computerParts.Controller.OrderController">
+   <children>
+      <AnchorPane layoutX="40.0" layoutY="23.0" prefHeight="62.0" prefWidth="1258.0" style="-fx-background-color: #e0e0e0;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <JFXButton fx:id="btnCustomerCall" contentDisplay="CENTER" layoutX="833.0" layoutY="5.0" onAction="#btnCustomerCallOnActin" onMouseEntered="#btnCustomerCallEntered" onMouseExited="#btnCustomerCallExited" prefHeight="44.0" prefWidth="44.0" stylesheets="@../css/Home.css" text=" ">
+               <graphic>
+                  <ImageView fx:id="imgeCaller" fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Add_Shopping_Cart_100px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <TextField fx:id="textSearch" layoutX="452.0" layoutY="9.0" onAction="#textSearchOnAction" prefHeight="35.0" prefWidth="370.0" promptText="Search Custoer and Item" styleClass="textField" stylesheets="@../css/Home.css" />
+            <Label fx:id="lblDate" layoutX="6.0" layoutY="6.0" onDragDetected="#lblDateOnAction" prefHeight="42.0" prefWidth="179.0" textFill="#299767">
+               <font>
+                  <Font name="Quarca-ConLig" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblReceptionId" layoutX="1117.0" layoutY="9.0" prefHeight="35.0" prefWidth="133.0" />
+            <TextField fx:id="textOid" alignment="CENTER" layoutX="196.0" layoutY="17.0" onAction="#textOidOnAction" prefHeight="25.0" prefWidth="105.0" promptText="Oder ID" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+            <TextField fx:id="textPaymentId" alignment="CENTER" layoutX="311.0" layoutY="15.0" onAction="#textPaymentIdOnAction" prefHeight="25.0" prefWidth="105.0" promptText="Payment ID" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+            <JFXComboBox fx:id="comboReceptionID" focusColor="#939497" layoutX="980.0" layoutY="15.0" onAction="#comboReceptionIDOnAction" prefHeight="25.0" prefWidth="120.0" promptText="Reception ID" />
+            <Label fx:id="lblOID" alignment="CENTER" contentDisplay="CENTER" layoutX="196.0" layoutY="41.0" prefHeight="17.0" prefWidth="105.0" textFill="RED" />
+            <Label fx:id="lblPID" alignment="CENTER" contentDisplay="CENTER" layoutX="311.0" layoutY="40.0" prefHeight="17.0" prefWidth="105.0" textFill="RED" />
+            <Label alignment="CENTER" layoutX="201.0" prefHeight="17.0" prefWidth="95.0" text="Oder ID" />
+            <Label alignment="CENTER" layoutX="316.0" layoutY="-2.0" prefHeight="17.0" prefWidth="95.0" text="Payment ID" />
+            <Label alignment="CENTER" layoutX="1148.0" layoutY="38.0" prefHeight="17.0" prefWidth="88.0" text="Reception ID" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="textCustomerID" alignment="CENTER" layoutX="43.0" layoutY="153.0" onAction="#textCustomerIDOnAction" prefHeight="25.0" prefWidth="95.0" promptText="Customer ID" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textCustomerName" alignment="CENTER" layoutX="160.0" layoutY="153.0" onAction="#textCustomerNameOnAction" prefHeight="25.0" prefWidth="155.0" promptText="Customer Name" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textCustomerAddress" alignment="CENTER" layoutX="43.0" layoutY="198.0" onAction="#textCustomerAddressOnaction" prefHeight="25.0" prefWidth="269.0" promptText="Customer Address" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textPhoneNum" alignment="CENTER" layoutX="43.0" layoutY="245.0" onAction="#textPhoneNumOnActon" prefHeight="25.0" prefWidth="171.0" promptText="Customer Phone Number" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <ComboBox fx:id="comboItemName" layoutX="389.0" layoutY="153.0" onAction="#comboItemNameOnAction" prefWidth="150.0" promptText="Item Name" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textItemCode" alignment="CENTER" layoutX="563.0" layoutY="153.0" onAction="#textItemCodeOnActon" prefHeight="25.0" prefWidth="95.0" promptText="ItemCode" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textItemBrand" alignment="CENTER" layoutX="387.0" layoutY="198.0" onAction="#textItemBrandOnAction" prefHeight="25.0" prefWidth="155.0" promptText="Item Brand" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextArea fx:id="textDescription" layoutX="389.0" layoutY="245.0" onDragDetected="#textDescriptionOnAction" prefHeight="76.0" prefWidth="363.0" promptText="Item Discription" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textItemqty" alignment="CENTER" layoutX="563.0" layoutY="198.0" onAction="#textItemqtyOnAction" prefHeight="25.0" prefWidth="155.0" promptText="Item QTY" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textUnitPrice" alignment="CENTER" layoutX="387.0" layoutY="343.0" onAction="#textUnitPriceOnAction" prefHeight="25.0" prefWidth="155.0" promptText="Item Unit Price" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textTotal" alignment="CENTER" layoutX="1112.0" layoutY="334.0" onAction="#textTotalOnAction" prefHeight="49.0" prefWidth="179.0" promptText="Total" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblSelectItem" layoutX="773.0" layoutY="154.0" onMouseEntered="#btnCustomerCallEntered" onMouseExited="#btnCustomerCallExntered" prefHeight="177.0" prefWidth="522.0">
+         <columns>
+            <TableColumn prefWidth="106.0" text="Oder ID" />
+            <TableColumn prefWidth="118.0" text="Item ID" />
+            <TableColumn prefWidth="125.0" text="Qty" />
+            <TableColumn prefWidth="172.0" text="Unit Price" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="651.0" layoutY="343.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="ADD Card" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Add_100px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnCloseOrder" layoutX="227.0" layoutY="245.0" onAction="#btnCloseOrderOnAction" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="Close Order" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Trash_Can_100px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="773.0" layoutY="343.0" onAction="#btnUpdateOnActiojn" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="UPDATE" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Available_Updates_100px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <TableView fx:id="tblComputerParts" layoutX="809.0" layoutY="519.0" prefHeight="177.0" prefWidth="496.0">
+         <columns>
+            <TableColumn prefWidth="107.0" text="Item Code" />
+            <TableColumn prefWidth="125.0" text="Item Name" />
+            <TableColumn prefWidth="97.0" text="QTY" />
+            <TableColumn prefWidth="168.0" text="Unit Price" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnPay" contentDisplay="RIGHT" layoutX="1178.0" layoutY="407.0" onAction="#btnPayOnAction" prefHeight="26.0" prefWidth="105.0" style="-fx-background-color: #2e7d32; -fx-background-radius: 20;" text="PAY" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Cheap_2_100px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="911.0" layoutY="101.0" prefHeight="42.0" prefWidth="195.0" text="SELECT ITEMS">
+         <font>
+            <Font name="Quarca-ConLig" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="50.0" layoutX="912.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8_Shopping_Bag_100px_1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="817.0" layoutY="464.0" prefHeight="42.0" prefWidth="481.0" text="COMPUTERS PARTS">
+         <font>
+            <Font name="Quarca-ConLig" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="50.0" layoutX="912.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8_PC_on_Desk_100px.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblOder" layoutX="16.0" layoutY="519.0" prefHeight="177.0" prefWidth="757.0">
+         <columns>
+            <TableColumn prefWidth="102.0" text="oid" />
+            <TableColumn prefWidth="117.0" text="date" />
+            <TableColumn prefWidth="152.0" text="customer_cid" />
+            <TableColumn prefWidth="112.0" text="payment_pid" />
+            <TableColumn prefWidth="144.0" text="reception_rid" />
+            <TableColumn prefWidth="129.0" text="status" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="457.0" prefHeight="42.0" prefWidth="757.0" text="ODER    DETAILS">
+         <font>
+            <Font name="Quarca-ConLig" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="380.0" layoutX="201.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8_Reception_50px.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="-6.0" layoutY="449.0" prefHeight="3.0" prefWidth="1355.0" />
+      <TextField fx:id="textPayment" alignment="CENTER" layoutX="829.0" layoutY="401.0" onAction="#textPaymentOnAction" prefHeight="35.0" prefWidth="179.0" promptText="Payment" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textBalance" alignment="CENTER" layoutX="1021.0" layoutY="401.0" onAction="#textBalanceOnAction" prefHeight="35.0" prefWidth="133.0" promptText="Balance" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblCustID" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="179.0" prefHeight="17.0" prefWidth="105.0" textFill="RED" />
+      <Label fx:id="lblCustName" alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="179.0" prefHeight="17.0" prefWidth="150.0" textFill="RED" />
+      <Label fx:id="lblPhoneNumber" alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="271.0" prefHeight="17.0" prefWidth="171.0" textFill="RED" />
+      <Label fx:id="lblQTY" alignment="CENTER" contentDisplay="CENTER" layoutX="563.0" layoutY="224.0" prefHeight="17.0" prefWidth="155.0" textFill="RED" />
+      <Label fx:id="lblPassword" alignment="CENTER" contentDisplay="CENTER" layoutX="1124.0" layoutY="136.0" prefHeight="17.0" prefWidth="171.0" textFill="RED" />
+      <Label fx:id="lblPayment" alignment="CENTER" contentDisplay="CENTER" layoutX="833.0" layoutY="432.0" prefHeight="17.0" prefWidth="171.0" textFill="RED" />
+      <Label alignment="CENTER" layoutX="43.0" layoutY="135.0" prefHeight="17.0" prefWidth="88.0" text="Customer ID" />
+      <Label alignment="CENTER" layoutX="567.0" layoutY="136.0" prefHeight="17.0" prefWidth="88.0" text="Item ID" />
+   </children>
+</AnchorPane>

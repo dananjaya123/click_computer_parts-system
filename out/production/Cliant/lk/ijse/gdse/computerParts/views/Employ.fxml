@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pnlEmploy" prefHeight="599.0" prefWidth="842.0" style="-fx-border-width: 5;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.computerParts.Controller.EmployeController">
+   <children>
+      <AnchorPane layoutX="98.0" layoutY="14.0" prefHeight="45.0" prefWidth="669.0" style="-fx-background-color: #e0e0e0;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TextField fx:id="textSearch" layoutX="121.0" layoutY="9.0" onAction="#textSearchOnAction" prefHeight="26.0" prefWidth="370.0" promptText="Search Custoer and Item" styleClass="textField" stylesheets="@../css/Home.css" />
+            <JFXButton fx:id="btnSearch" contentDisplay="CENTER" layoutX="513.0" layoutY="2.0" onAction="#btnSearchOnAction" prefHeight="38.0" prefWidth="42.0" stylesheets="@../css/Home.css" text=" ">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Search_100px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="textID" layoutX="72.0" layoutY="152.0" onAction="#textIDOnAction" prefHeight="25.0" prefWidth="141.0" promptText="Reception ID" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textName" layoutX="233.0" layoutY="152.0" onAction="#textNameOnAction" promptText="User Name" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textNIC" layoutX="413.0" layoutY="152.0" onAction="#textNICOnAction" promptText="Reception NIC" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textAddress" layoutX="596.0" layoutY="152.0" onAction="#textAddressOnAction" promptText="Reception Address" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textPhoneNum" layoutX="68.0" layoutY="200.0" onAction="#textPhoneNumOnAction" promptText="Phone Num" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <PasswordField fx:id="textPassword" layoutX="233.0" layoutY="200.0" onAction="#textPasswordOnAction" prefHeight="25.0" prefWidth="179.0" promptText="Password" style="-fx-border-radius: 20; -fx-background-radius: 20;" />
+      <TableView fx:id="tblReception" layoutX="21.0" layoutY="300.0" prefHeight="289.0" prefWidth="802.0">
+        <columns>
+          <TableColumn prefWidth="106.0" text="Reception ID" />
+          <TableColumn prefWidth="127.0" text="User Name" />
+            <TableColumn prefWidth="138.0" text="NIC" />
+            <TableColumn prefWidth="140.0" text="Address" />
+            <TableColumn prefWidth="128.0" text="Phone number" />
+            <TableColumn prefWidth="162.0" text="Password" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="514.0" layoutY="243.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="ADD Card" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Add_100px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="lblID" layoutX="77.0" layoutY="177.0" prefHeight="17.0" prefWidth="127.0" textFill="#ff0808" />
+      <Label fx:id="lblName" layoutX="244.0" layoutY="177.0" prefHeight="17.0" prefWidth="127.0" textFill="#ff0808" />
+      <Label fx:id="lblNIC" layoutX="424.0" layoutY="177.0" prefHeight="17.0" prefWidth="127.0" textFill="#ff0808" />
+      <Label fx:id="lblAddress" layoutX="607.0" layoutY="177.0" prefHeight="17.0" prefWidth="127.0" textFill="#ff0808" />
+      <Label fx:id="lblNum" layoutX="79.0" layoutY="226.0" prefHeight="17.0" prefWidth="127.0" textFill="#ff0808" />
+      <Label fx:id="lblPassword" layoutX="239.0" layoutY="226.0" prefHeight="17.0" prefWidth="164.0" textFill="#ff0808" />
+      <JFXButton fx:id="btnUpdate" layoutX="720.0" layoutY="243.0" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Available_Updates_100px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="614.0" layoutY="243.0" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Trash_Can_100px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="4.0" layoutY="84.0" prefHeight="45.0" prefWidth="836.0" text="RECEPTION  MANAGE">
+         <font>
+            <Font name="Quarca-ConLig" size="37.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Reception_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label fx:id="lblSearch" layoutX="224.0" layoutY="63.0" prefHeight="17.0" prefWidth="358.0" textFill="#ff0808" />
+   </children>
+</AnchorPane>

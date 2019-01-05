@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="491.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.computerParts.Controller.ItemController">
+   <children>
+      <Label layoutX="71.0" layoutY="2.0" prefHeight="45.0" prefWidth="145.0" text="Item">
+         <font>
+            <Font name="Quarca-ConLig" size="38.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_In_Transit_100px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TableView fx:id="tblItem" layoutX="13.0" layoutY="260.0" prefHeight="177.0" prefWidth="775.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Item Code" />
+            <TableColumn prefWidth="149.0" text="Item Name" />
+            <TableColumn prefWidth="140.0" text="Item Brand" />
+            <TableColumn prefWidth="151.0" text="Description" />
+            <TableColumn prefWidth="124.0" text="QTY" />
+            <TableColumn prefWidth="135.0" text="Unit Price" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="575.0" layoutY="212.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="ADD" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Add_100px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <TextField fx:id="textItemCode" layoutX="149.0" layoutY="86.0" onAction="#textItemCodeOnAction" prefHeight="25.0" prefWidth="106.0" promptText="Item Code" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" />
+      <TextField fx:id="textItemName" layoutX="273.0" layoutY="86.0" onAction="#textItemNameOnAction" prefHeight="25.0" prefWidth="145.0" promptText="Item Name" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" />
+      <TextField fx:id="textItemQty" layoutX="147.0" layoutY="137.0" onAction="#textItemQtyOnAction" prefHeight="25.0" prefWidth="106.0" promptText="QTY" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" />
+      <TextField fx:id="textItemUnitPrice" layoutX="274.0" layoutY="137.0" onAction="#textItemUnitPriceOnAction" prefHeight="25.0" prefWidth="145.0" promptText="Unit Price" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" />
+      <Separator layoutX="9.0" layoutY="66.0" prefHeight="3.0" prefWidth="783.0" />
+      <JFXButton fx:id="btnDelete" layoutX="692.0" layoutY="449.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Trash_Can_100px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="597.0" layoutY="449.0" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Available_Updates_100px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <TextField fx:id="textItemSearch" layoutX="216.0" layoutY="12.0" onAction="#textItemSearchOnAction" prefHeight="25.0" prefWidth="281.0" promptText="Item Search" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" />
+      <JFXButton fx:id="btnSearch" layoutX="519.0" layoutY="12.0" onAction="#btnSearchOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #2e7d32; -fx-background-radius: 20;" text="Search" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Search_100px_1.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <TextField fx:id="textBrandName" layoutX="433.0" layoutY="86.0" onAction="#textBrandNameOnAction" prefHeight="25.0" prefWidth="145.0" promptText="Brand Name" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" />
+      <Label fx:id="lblCode" alignment="CENTER" layoutX="149.0" layoutY="111.0" prefHeight="17.0" prefWidth="106.0" textFill="RED" />
+      <Label fx:id="lblName" alignment="CENTER" layoutX="279.0" layoutY="111.0" prefHeight="17.0" prefWidth="137.0" textFill="RED" />
+      <Label fx:id="lblBrand" alignment="CENTER" layoutX="440.0" layoutY="111.0" prefHeight="17.0" prefWidth="137.0" textFill="RED" />
+      <Label fx:id="lblQty" alignment="CENTER" layoutX="149.0" layoutY="162.0" prefHeight="17.0" prefWidth="106.0" textFill="RED" />
+      <Label fx:id="lblPrice" alignment="CENTER" layoutX="275.0" layoutY="162.0" prefHeight="17.0" prefWidth="137.0" textFill="RED" />
+      <TextArea fx:id="textDescription" layoutX="149.0" layoutY="179.0" onDragDetected="#textDescriptionOnAction" prefHeight="74.0" prefWidth="424.0" promptText="Description" />
+      <Label fx:id="lblSearch" alignment="CENTER" layoutX="224.0" layoutY="39.0" prefHeight="17.0" prefWidth="270.0" textFill="RED" />
+   </children>
+</AnchorPane>

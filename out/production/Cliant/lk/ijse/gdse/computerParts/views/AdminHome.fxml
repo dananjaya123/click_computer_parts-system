@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="1058.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.computerParts.Controller.AdminHomeController">
+   <children>
+      <AnchorPane focusTraversable="true" layoutY="-2.0" prefHeight="638.0" prefWidth="221.0" style="-fx-background-color: #17202A;" stylesheets="@../css/Home.css">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.85" prefHeight="38.0" prefWidth="217.0" style="-fx-background-color: #17202A; -fx-border-color: #4D4D4D;" text="Click Computer Parst" textFill="WHITE">
+               <font>
+                  <Font name="Quarca-ConLig" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnDashboard" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="1.0" layoutY="64.0" onAction="#btnDashboardOnAction" prefHeight="98.0" prefWidth="105.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="buttonHome" stylesheets="@../css/Home.css" text="Dashboard" textFill="#c3c0c0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="imageDashboard" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Dashboard_100px_1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnItem" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="109.0" layoutY="64.0" onAction="#btnItemOnAction" prefHeight="98.0" prefWidth="105.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="buttonHome" stylesheets="@../css/Home.css" text="Item" textFill="#c3c0c0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Shopping_Cart_100px_5.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnEmploy" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="1.0" layoutY="165.0" onAction="#btnEmployOnAction" prefHeight="98.0" prefWidth="105.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="buttonHome" stylesheets="@../css/Home.css" text="   Manage Employ" textFill="#c3c0c0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Businessman_100px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSetting" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="1.0" layoutY="266.0" onAction="#btnSettingOnAction" onMouseClicked="#btnSettingOnMouseClicked" prefHeight="98.0" prefWidth="105.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="buttonHome" stylesheets="@../css/Home.css" text="Setting" textFill="#bcb7b7">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Settings_100px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnLogout" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="109.0" layoutY="266.0" onAction="#btnLogoutOnAction" prefHeight="98.0" prefWidth="105.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="buttonHome" stylesheets="@../css/Home.css" text="Logout" textFill="#c3c0c0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Login_100px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label alignment="TOP_CENTER" layoutX="2.0" layoutY="394.0" opacity="0.85" prefHeight="24.0" prefWidth="208.0" text="System  Info" textFill="WHITE">
+               <font>
+                  <Font name="Quarca-ConLig" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="5.0" layoutY="422.0" opacity="0.85" prefHeight="24.0" prefWidth="208.0" text="Computer Parts V. 1.0.0" textFill="#aeaeae">
+               <font>
+                  <Font name="Quarca-ConLig" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="5.0" layoutY="450.0" opacity="0.85" prefHeight="24.0" prefWidth="208.0" text="Click Computer Shope," textFill="#aeaeae">
+               <font>
+                  <Font name="Quarca-ConLig" size="14.0" />
+               </font>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="6.0" layoutY="468.0" opacity="0.85" prefHeight="24.0" prefWidth="208.0" text="Galle,Yakkalamulla" textFill="#aeaeae">
+               <font>
+                  <Font name="Quarca-ConLig" size="14.0" />
+               </font>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="5.0" layoutY="491.0" opacity="0.85" prefHeight="24.0" prefWidth="208.0" text="Email" textFill="#aeaeae">
+               <font>
+                  <Font name="Quarca-ConLig" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="6.0" layoutY="507.0" opacity="0.85" prefHeight="24.0" prefWidth="208.0" text="clickComputer123@gmail.com" textFill="#aeaeae">
+               <font>
+                  <Font name="Quarca-ConLig" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="12.0" layoutY="570.0" opacity="0.85" prefHeight="24.0" prefWidth="208.0" text="Developed By" textFill="#aeaeae">
+               <font>
+                  <Font name="Quarca-ConLig" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="13.0" layoutY="586.0" opacity="0.85" prefHeight="24.0" prefWidth="208.0" text="Dananjaya VIthanage" textFill="#aeaeae">
+               <font>
+                  <Font name="Quarca-ConLig" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="12.0" layoutY="604.0" opacity="0.85" prefHeight="24.0" prefWidth="208.0" text="For More Details : 0779872486" textFill="#aeaeae">
+               <font>
+                  <Font name="Quarca-ConLig" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="59.0" layoutY="526.0" opacity="0.56" prefHeight="10.0" prefWidth="98.0" />
+            <Separator layoutX="20.0" layoutY="560.0" opacity="0.74" prefHeight="10.0" prefWidth="192.0" />
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="7.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton fx:id="btnReport" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="109.0" layoutY="165.0" onAction="#btnReportOnAction" prefHeight="98.0" prefWidth="105.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="buttonHome" stylesheets="@../css/Home.css" text="Reports" textFill="#c3c0c0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Report_Card_100px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="217.0" prefHeight="38.0" prefWidth="842.0" style="-fx-background-color: #2C3E50;">
+         <children>
+            <Label fx:id="lblDate" prefHeight="38.0" prefWidth="169.0" textFill="WHITE">
+               <font>
+                  <Font name="Quarca-ConLig" size="29.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pnlMain" layoutX="217.0" layoutY="36.0" prefHeight="599.0" prefWidth="842.0" style="-fx-border-width: 5;" />
+   </children>
+</AnchorPane>

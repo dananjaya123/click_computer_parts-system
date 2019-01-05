@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="491.0" style="-fx-background-color: #455a64;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.computerParts.Controller.AdminLoginController">
+   <children>
+      <TextField fx:id="textName" layoutX="181.0" layoutY="120.0" onAction="#textNameOnActin" prefHeight="25.0" prefWidth="262.0" promptText="UserName" styleClass="textField" stylesheets="@../css/Home.css" />
+      <PasswordField fx:id="textPw" layoutX="181.0" layoutY="159.0" onAction="#textPwOnAction" prefHeight="25.0" prefWidth="262.0" promptText="Password" styleClass="textField" stylesheets="@../css/Home.css" />
+      <JFXButton fx:id="btnLogin" layoutX="367.0" layoutY="211.0" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #b71c1c;" text="Login" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="39.0" layoutY="20.0" prefHeight="59.0" prefWidth="413.0" style="-fx-background-color: #e0e0e0;" text="ADMIN  lOGIN">
+         <font>
+            <Font name="Quarca-ConLig" size="39.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="lblMassage" layoutX="182.0" layoutY="190.0" prefHeight="17.0" prefWidth="262.0" textFill="WHITE" />
+      <ImageView fitHeight="126.0" fitWidth="130.0" layoutX="39.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8_Businessman_100px_2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

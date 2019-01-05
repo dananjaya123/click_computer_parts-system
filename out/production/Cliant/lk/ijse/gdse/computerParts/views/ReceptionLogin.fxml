@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="322.0" prefWidth="529.0" style="-fx-background-color: #455a64;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.computerParts.Controller.ReceptionLoginController">
+   <children>
+      <TextField fx:id="textName" layoutX="223.0" layoutY="167.0" onAction="#textNameOnActin" prefHeight="25.0" prefWidth="262.0" promptText="UserName" styleClass="textField" stylesheets="@../css/Home.css" />
+      <PasswordField fx:id="textPw" layoutX="223.0" layoutY="210.0" onAction="#textPwOnAction" prefHeight="25.0" prefWidth="262.0" promptText="Password" styleClass="textField" stylesheets="@../css/Home.css" />
+      <JFXButton fx:id="btnLogin" layoutX="409.0" layoutY="258.0" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #b71c1c;" text="Login" textFill="WHITE" />
+      <Label fx:id="lblMassage" layoutX="222.0" layoutY="241.0" prefHeight="17.0" prefWidth="262.0" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="31.0" layoutY="21.0" prefHeight="59.0" prefWidth="463.0" style="-fx-background-color: #e0e0e0;" text="RECEPTION lOGIN">
+         <font>
+            <Font name="Quarca-ConLig" size="39.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="126.0" fitWidth="130.0" layoutX="60.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8_Registration_100px_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
